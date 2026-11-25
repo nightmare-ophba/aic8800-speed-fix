@@ -1,0 +1,3 @@
+[submodule "upstream-aic8800"]
+	path = upstream-aic8800
+	url = https://github.com/radxa-pkg/aic8800.git

@@ -1,0 +1,10 @@
+[Unit]
+Description=Load the locally built AIC8800 speed-fix driver for USB port %I
+After=systemd-udev-settle.service NetworkManager.service
+Wants=systemd-udev-settle.service
+
+[Service]
+Type=oneshot
+Environment=AIC8800_STATE_DIR=/var/lib/aic8800-speed-fix
+ExecStartPre=@ROOT_DIR@/build.sh
+ExecStart=@ROOT_DIR@/load-local-driver.sh

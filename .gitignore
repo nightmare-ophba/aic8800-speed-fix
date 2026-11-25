@@ -1,0 +1,4 @@
+*.log
+state/*.txt
+artifacts/*.ko
+artifacts/SHA256SUMS
